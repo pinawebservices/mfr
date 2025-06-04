@@ -4,40 +4,40 @@ import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image";
 
 export default function AboutPage() {
-    const team = [
-        {
-            name: "Dr. Sarah Johnson",
-            role: "Lead Physical Therapist",
-            credentials: "DPT, OCS",
-            experience: "12 years",
-            image: "/placeholder.svg?height=300&width=300",
-            bio: "Specializes in orthopedic and sports rehabilitation with extensive experience in manual therapy techniques.",
-        },
-        {
-            name: "Michael Chen",
-            role: "Licensed Massage Therapist",
-            credentials: "LMT, NCTMB",
-            experience: "8 years",
-            image: "/placeholder.svg?height=300&width=300",
-            bio: "Expert in deep tissue and sports massage with a focus on injury prevention and recovery.",
-        },
-        {
-            name: "Dr. Emily Rodriguez",
-            role: "Physical Therapist",
-            credentials: "DPT, CSCS",
-            experience: "6 years",
-            image: "/placeholder.svg?height=300&width=300",
-            bio: "Passionate about helping patients regain mobility and strength through personalized treatment plans.",
-        },
-        {
-            name: "Lisa Thompson",
-            role: "Massage Therapist",
-            credentials: "LMT, CranioSacral Certified",
-            experience: "10 years",
-            image: "/placeholder.svg?height=300&width=300",
-            bio: "Specializes in relaxation and therapeutic massage with additional training in craniosacral therapy.",
-        },
-    ]
+    // const team = [
+    //     {
+    //         name: "Dr. Sarah Johnson",
+    //         role: "Lead Physical Therapist",
+    //         credentials: "DPT, OCS",
+    //         experience: "12 years",
+    //         image: "/placeholder.svg?height=300&width=300",
+    //         bio: "Specializes in orthopedic and sports rehabilitation with extensive experience in manual therapy techniques.",
+    //     },
+    //     {
+    //         name: "Michael Chen",
+    //         role: "Licensed Massage Therapist",
+    //         credentials: "LMT, NCTMB",
+    //         experience: "8 years",
+    //         image: "/placeholder.svg?height=300&width=300",
+    //         bio: "Expert in deep tissue and sports massage with a focus on injury prevention and recovery.",
+    //     },
+    //     {
+    //         name: "Dr. Emily Rodriguez",
+    //         role: "Physical Therapist",
+    //         credentials: "DPT, CSCS",
+    //         experience: "6 years",
+    //         image: "/placeholder.svg?height=300&width=300",
+    //         bio: "Passionate about helping patients regain mobility and strength through personalized treatment plans.",
+    //     },
+    //     {
+    //         name: "Lisa Thompson",
+    //         role: "Massage Therapist",
+    //         credentials: "LMT, CranioSacral Certified",
+    //         experience: "10 years",
+    //         image: "/placeholder.svg?height=300&width=300",
+    //         bio: "Specializes in relaxation and therapeutic massage with additional training in craniosacral therapy.",
+    //     },
+    // ]
 
     const values = [
         {
@@ -86,23 +86,25 @@ export default function AboutPage() {
                                     Founded in 2018, My Functional Recovery began with a simple mission: to provide exceptional physical
                                     therapy and massage services in a warm, welcoming environment. Our founders, both healthcare
                                     professionals, recognized the need for a practice that combines clinical expertise with genuine care
-                                    for each individual's journey to wellness.
+                                    for each individual&#39;s journey to wellness.
                                 </p>
                                 <p>
-                                    Over the years, we've grown from a small clinic to a comprehensive wellness center, but our core
+                                    Over the years, we&#39;ve grown from a small clinic to a comprehensive wellness center, but our core
                                     values remain unchanged. We believe that healing happens best when patients feel heard, understood,
                                     and supported throughout their treatment process.
                                 </p>
                                 <p>
-                                    Today, we're proud to serve hundreds of clients each month, helping them overcome injuries, manage
+                                    Today, we&#39;re proud to serve hundreds of clients each month, helping them overcome injuries, manage
                                     pain, reduce stress, and achieve their health and wellness goals. Our team of licensed professionals
                                     brings together decades of combined experience and a shared commitment to excellence.
                                 </p>
                             </div>
                         </div>
                         <div className="relative">
-                            <img
-                                src="/srt_professional.jpg?height=500&width=600"
+                            <Image
+                                src="/srt_professional.jpg"
+                                width={600}
+                                height={500}
                                 alt="My Functional Recovery facility"
                                 className="rounded-2xl shadow-xl"
                             />

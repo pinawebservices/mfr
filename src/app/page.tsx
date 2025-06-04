@@ -12,28 +12,28 @@ export default function HomePage() {
       description: "Comprehensive rehabilitation and injury recovery programs",
       duration: "45-60 min",
       price: "From $120",
-      image: "/deep_tissue.jpg?height=300&width=400",
+      image: "/deep_tissue.jpg",
     },
     {
       name: "Deep Tissue Massage",
       description: "Therapeutic massage targeting muscle tension and knots",
       duration: "60-90 min",
       price: "From $90",
-      image: "/scraping.jpg?height=300&width=400",
+      image: "/scraping.jpg",
     },
     {
       name: "Sports Massage",
       description: "Specialized treatment for athletes and active individuals",
       duration: "60 min",
       price: "From $100",
-      image: "/physical_therapy.jpg?height=300&width=400",
+      image: "/physical_therapy.jpg",
     },
     {
       name: "Relaxation Massage",
       description: "Gentle, soothing massage for stress relief and relaxation",
       duration: "60-90 min",
       price: "From $80",
-      image: "/relaxation_massage.jpg?height=300&width=400",
+      image: "/relaxation_massage.jpg",
     },
   ]
 
@@ -121,8 +121,10 @@ export default function HomePage() {
               {services.map((service, index) => (
                   <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
                     <div className="relative overflow-hidden rounded-t-lg">
-                      <img
+                      <Image
                           src={service.image || "/placeholder.svg"}
+                          width={300}
+                          height={400}
                           alt={service.name}
                           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -193,8 +195,10 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="relative">
-                <img
-                    src="/srt_professional.jpg?height=400&width=500"
+                <Image
+                    src="/srt_professional.jpg"
+                    width={500}
+                    height={400}
                     alt="Professional therapist"
                     className="rounded-2xl shadow-xl"
                 />
@@ -220,7 +224,7 @@ export default function HomePage() {
                             <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                         ))}
                       </div>
-                      <p className="text-gray-600 mb-6 italic">"{testimonial.text}"</p>
+                      <p className="text-gray-600 mb-6 italic">&#34;{testimonial.text}&#34;</p>
                       <div className="font-semibold text-gray-900">{testimonial.name}</div>
                     </CardContent>
                   </Card>
