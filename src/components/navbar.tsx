@@ -62,7 +62,7 @@ export default function Navbar() {
                     {/* Mobile menu button */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="md:hidden p-2 rounded-md text-gray-600 hover:text-emerald-600"
+                        className="md:hidden p-2 rounded-md text-neutral-50 hover:text-emerald-600"
                     >
                         {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                     </button>
@@ -76,7 +76,7 @@ export default function Navbar() {
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="text-gray-600 hover:text-emerald-600 font-medium px-2 py-1"
+                                    className="text-neutral-50 hover:text-[#f0978a] font-medium px-2 py-1"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.name}
@@ -89,7 +89,7 @@ export default function Navbar() {
                                         Call Us
                                     </Link>
                                 </Button>
-                                <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700" asChild>
+                                <Button size="sm" className="Mfr-btn-bg-pink" asChild>
                                     <Link href="/book">
                                         <Calendar className="mr-2 h-4 w-4" />
                                         Book Now
