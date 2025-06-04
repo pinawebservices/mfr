@@ -2,6 +2,7 @@ import { Check, Clock, Star } from "lucide-react"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image";
 
 export default function ServicesPage() {
     const services = [
@@ -12,7 +13,7 @@ export default function ServicesPage() {
                 "Comprehensive rehabilitation and injury recovery programs designed to restore function and reduce pain.",
             duration: "45-60 minutes",
             price: "From $120",
-            image: "/physical_therapy.jpg?height=300&width=400",
+            image: "/physical_therapy.jpg",
             features: [
                 "Injury assessment and diagnosis",
                 "Personalized treatment plans",
@@ -36,7 +37,7 @@ export default function ServicesPage() {
                 "Therapeutic massage targeting deeper layers of muscle and connective tissue to release chronic tension.",
             duration: "60-90 minutes",
             price: "From $90",
-            image: "/scraping.jpg?height=300&width=400",
+            image: "/scraping.jpg",
             features: [
                 "Targets chronic muscle tension",
                 "Improves blood circulation",
@@ -60,7 +61,7 @@ export default function ServicesPage() {
                 "Specialized massage therapy designed for athletes and active individuals to enhance performance and prevent injuries.",
             duration: "60 minutes",
             price: "From $100",
-            image: "/deep_tissue.jpg?height=300&width=400",
+            image: "/deep_tissue.jpg",
             features: [
                 "Pre-event preparation",
                 "Post-event recovery",
@@ -84,7 +85,7 @@ export default function ServicesPage() {
                 "Gentle, soothing massage focused on stress relief and overall relaxation for mind and body wellness.",
             duration: "60-90 minutes",
             price: "From $80",
-            image: "/relaxation_massage.jpg?height=300&width=400",
+            image: "/relaxation_massage.jpg",
             features: [
                 "Gentle, flowing strokes",
                 "Stress reduction",
@@ -126,8 +127,10 @@ export default function ServicesPage() {
                                 className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
                             >
                                 <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
-                                    <img
+                                    <Image
                                         src={service.image || "/placeholder.svg"}
+                                        width={400}
+                                        height={300}
                                         alt={service.name}
                                         className="w-full h-96 object-cover rounded-2xl shadow-xl"
                                     />

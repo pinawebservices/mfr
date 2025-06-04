@@ -1,4 +1,4 @@
-import { Clock, Mail, MapPin, Phone } from "lucide-react"
+import { Clock, Mail, Phone } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
