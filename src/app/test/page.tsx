@@ -25,7 +25,7 @@ export default function TestPage() {
 
         return () => {
             document.body.removeChild(script);
-            timers.forEach(clearTimeout)
+            timers.forEach(clearTimeout);
         };
     }, []);
 

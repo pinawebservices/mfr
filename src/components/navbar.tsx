@@ -11,10 +11,10 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     const navigation = [
-        { name: "Home", href: "/" },
-        { name: "Services", href: "/services" },
-        { name: "About", href: "/about" },
-        { name: "Contact", href: "/contact" },
+        { name: "Home", href: "/" , reloadDocument: false},
+        { name: "Services", href: "/services", reloadDocument: true },
+        { name: "About", href: "/about" , reloadDocument: false},
+        { name: "Contact", href: "/contact" , reloadDocument: false},
     ]
 
     return (
@@ -33,13 +33,23 @@ export default function Navbar() {
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className="text-neutral-50 hover:text-[#58aebb] font-medium transition-colors"
-                            >
-                                {item.name}
-                            </Link>
+                            item.reloadDocument ? (
+                                <a
+                                    key={item.name}
+                                    href={item.href}
+                                    className="text-neutral-50 hover:text-[#58aebb] font-medium transition-colors"
+                                >
+                                    {item.name}
+                                </a>
+                            ) : (
+                                <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    className="text-neutral-50 hover:text-[#58aebb] font-medium transition-colors"
+                                >
+                                    {item.name}
+                                </Link>
+                            )
                         ))}
                     </div>
 
