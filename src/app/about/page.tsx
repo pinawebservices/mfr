@@ -206,7 +206,7 @@ export default function AboutPage() {
                                 </div>
                                 <h3 className="text-xl font-semibold mb-3 text-dark">Insurance Accepted</h3>
                                 <p className="text-dark-600">
-                                    We work with most major insurance providers to make our services accessible and affordable.
+                                    We work with most major insurance providers to make our services very accessible and affordable.
                                 </p>
                             </CardContent>
                         </Card>
