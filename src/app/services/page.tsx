@@ -32,7 +32,7 @@ export default function TestPage() {
     return (
         <div>
             {/* Header is in layout.tsx */}
-            <div id="booking-widget" style={{ minHeight: '600px', width: '100%' }} />
+            <div id="booking-widget" style={{ minHeight: '37.5rem', height: 'calc(100vh - 8rem)', width: '100%' }} />
             {/* Footer is in layout.tsx */}
         </div>
     );
