@@ -11,6 +11,7 @@ declare global {
             businessType: string;
             businessName: string;
             customDetails: string;
+            customerId: string;
             theme: {
                 primaryColor: string;
                 textColor: string;
@@ -24,9 +25,10 @@ export default function ChatbotProvider() {
         // Configure chatbot
         window.aiChatbotConfig = {
             apiUrl: 'https://aski-chatbot.vercel.app',
-            businessType: '',
+            businessType: 'default',
             businessName: 'My Functional Recovery',
             customDetails: 'Physical therapy, massage therapy, and rehabilitation services',
+            customerId: 'mfr-001',
             theme: {
                 primaryColor: '#4fd1c7',
                 textColor: '#4fd1c7'
