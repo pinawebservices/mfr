@@ -30,8 +30,8 @@ export default function ChatbotProvider() {
             customDetails: 'Physical therapy, massage therapy, and rehabilitation services',
             customerId: 'mfr-001',
             theme: {
-                primaryColor: '#4fd1c7',
-                textColor: '#4fd1c7'
+                primaryColor: '#F0978A',
+                textColor: '#F0978A'
             }
         }
 
