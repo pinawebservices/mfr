@@ -2,7 +2,8 @@
 
 import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
+import {Suspense, useEffect} from 'react'
+
 
 // Replace with your actual Measurement ID
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX'
@@ -87,7 +88,7 @@ export const gAnalyticsTrackActionClickWithDevice = (source: ButtonClickSource, 
 }
 
 // Google Analytics gtag types
-type GtagCommand = 'config' | 'event' | 'js' | 'set'
+// type GtagCommand = 'config' | 'event' | 'js' | 'set'
 type GtagConfigParams = {
     page_path?: string
     page_title?: string
@@ -115,6 +116,9 @@ declare global {
     }
 }
 
+
+// Separate component for analytics tracking that uses useSearchParams
+function GoogleAnalyticsTracking() {
 export default function GoogleAnalytics() {
     const pathname = usePathname()
     const searchParams = useSearchParams()
@@ -124,6 +128,11 @@ export default function GoogleAnalytics() {
         const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '')
         pageview(url)
     }, [pathname, searchParams])
+
+    return null
+}
+
+export default function GoogleAnalytics() {
 
     // Only load in production
     if (process.env.NODE_ENV !== 'production') {
@@ -151,6 +160,11 @@ export default function GoogleAnalytics() {
           `,
                 }}
             />
+
+            {/* Wrap the component that uses useSearchParams in Suspense */}
+            <Suspense fallback={null}>
+                <GoogleAnalyticsTracking />
+            </Suspense>
         </>
     )
 }
