@@ -87,7 +87,7 @@ export const gAnalyticsTrackActionClickWithDevice = (source: ButtonClickSource, 
 }
 
 // Google Analytics gtag types
-type GtagCommand = 'config' | 'event' | 'js' | 'set'
+// type GtagCommand = 'config' | 'event' | 'js' | 'set'
 type GtagConfigParams = {
     page_path?: string
     page_title?: string
