@@ -1,14 +1,28 @@
-"use client"
+'use client'
 
-import { Calendar, Menu, Phone, X } from "lucide-react"
+import {Calendar, Menu, Phone, X} from "lucide-react"
 import Link from "next/link"
-import { useState } from "react"
+import {useState} from "react"
+import {
+    ButtonClickSource,
+    Devices,
+    gAnalyticsTrackActionClickWithDevice,
+    TrackingAction,
+    TrackingCategory
+} from "../components/google-analytics"
 
-import { Button } from "@/components/ui/button"
+import {Button} from "@/components/ui/button"
 import Image from "next/image";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
+
+    const handleMobileMenuToggleAndTrack= () => {
+        if(!isOpen){
+            gAnalyticsTrackActionClickWithDevice(ButtonClickSource.Navbar, TrackingAction.ToggleMobileMenu, TrackingCategory.MobileMenuToggle, Devices.Mobile);
+        }
+        setIsOpen(!isOpen);
+    }
 
     const navigation = [
         { name: "Home", href: "/" , reloadDocument: false},
@@ -56,13 +70,13 @@ export default function Navbar() {
                     {/* Desktop CTA Buttons */}
                     <div className="hidden md:flex items-center space-x-4">
                         <Button variant="outline" size="sm" asChild>
-                            <Link href="/contact">
+                            <Link href="/contact" onClick={() => gAnalyticsTrackActionClickWithDevice(ButtonClickSource.Navbar, TrackingAction.ClickPhone, TrackingCategory.Contact, Devices.Desktop)}>
                                 <Phone className="mr-2 h-4 w-4" />
                                 Call Us
                             </Link>
                         </Button>
                         <Button size="sm" className="Mfr-btn-bg-pink" asChild>
-                            <Link href="/book">
+                            <Link href="/book" onClick={() => gAnalyticsTrackActionClickWithDevice(ButtonClickSource.Navbar, TrackingAction.GoToBooking, TrackingCategory.Booking, Devices.Desktop)}>
                                 <Calendar className="mr-2 h-4 w-4" />
                                 Book Now
                             </Link>
@@ -71,7 +85,7 @@ export default function Navbar() {
 
                     {/* Mobile menu button */}
                     <button
-                        onClick={() => setIsOpen(!isOpen)}
+                        onClick={handleMobileMenuToggleAndTrack}
                         className="md:hidden p-2 rounded-md text-neutral-50 hover:text-emerald-600"
                     >
                         {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -94,13 +108,13 @@ export default function Navbar() {
                             ))}
                             <div className="flex flex-col space-y-2 pt-4 border-t">
                                 <Button variant="outline" size="sm" asChild>
-                                    <Link href="/contact">
+                                    <Link href="/contact" onClick={() => gAnalyticsTrackActionClickWithDevice(ButtonClickSource.Navbar, TrackingAction.ClickPhone, TrackingCategory.Contact, Devices.Mobile)}>
                                         <Phone className="mr-2 h-4 w-4" />
                                         Call Us
                                     </Link>
                                 </Button>
                                 <Button size="sm" className="Mfr-btn-bg-pink" asChild>
-                                    <Link href="/book">
+                                    <Link href="/book" onClick={() => gAnalyticsTrackActionClickWithDevice(ButtonClickSource.Navbar, TrackingAction.GoToBooking, TrackingCategory.Booking, Devices.Mobile)}>
                                         <Calendar className="mr-2 h-4 w-4" />
                                         Book Now
                                     </Link>
