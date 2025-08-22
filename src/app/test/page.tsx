@@ -1,5 +1,11 @@
 "use client";
 import { useEffect } from 'react';
+import { notFound } from 'next/navigation';
+
+// Only allow access in development
+if (process.env.NODE_ENV === 'production') {
+    notFound() // Returns 404 in production
+}
 
 export default function TestPage() {
     useEffect(() => {

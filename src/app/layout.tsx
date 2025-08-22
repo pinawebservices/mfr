@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import ChatbotProvider from "@/components/ai-chatbot";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
+import GoogleAnalytics from "@/components/google-analytics"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={inter.className}>
+        <GoogleAnalytics />
         <Navbar />
         <main>{children}</main>
         <ChatbotProvider />
