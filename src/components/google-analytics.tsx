@@ -4,6 +4,7 @@ import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
 import {Suspense, useEffect} from 'react'
 
+
 // Replace with your actual Measurement ID
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX'
 
@@ -115,8 +116,10 @@ declare global {
     }
 }
 
+
 // Separate component for analytics tracking that uses useSearchParams
 function GoogleAnalyticsTracking() {
+export default function GoogleAnalytics() {
     const pathname = usePathname()
     const searchParams = useSearchParams()
 
@@ -157,6 +160,7 @@ export default function GoogleAnalytics() {
           `,
                 }}
             />
+
             {/* Wrap the component that uses useSearchParams in Suspense */}
             <Suspense fallback={null}>
                 <GoogleAnalyticsTracking />
