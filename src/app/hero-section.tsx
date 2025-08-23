@@ -9,7 +9,7 @@ import {
     TrackingCategory
 } from "@/components/google-analytics";
 import {ArrowRight, Star} from "lucide-react";
-import Image from "next/image";
+import {CldImage} from "next-cloudinary";
 
 export default function HeroSection() {
     return (
@@ -39,8 +39,8 @@ export default function HeroSection() {
                         </div>
                     </div>
                     <div className="relative">
-                        <Image
-                            src="/white-logo.png"
+                        <CldImage
+                            src="https://res.cloudinary.com/ddudpjxrp/image/upload/t_600w/v1755960920/white-logo_ikrrws.png"
                             alt=""
                             height={"500"}
                             width={"600"}
