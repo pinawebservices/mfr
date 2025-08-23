@@ -20,13 +20,13 @@ export const pageview = (url: string) => {
 export const event = ({ action, category, label, value }: {
     action: string
     category: string
-    label?: string
+    label: string
     value?: number
 }) => {
     if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('event', action, {
+        window.gtag('event', label, {
+            event_action: action,
             event_category: category,
-            event_label: label,
             value: value,
         })
     }
