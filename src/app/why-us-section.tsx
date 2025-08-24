@@ -1,6 +1,6 @@
 'use client'
 
-import {Calendar, Heart, MapPin, Star} from "lucide-react";
+import {Calendar, Heart, Star} from "lucide-react";
 import Image from "next/image";
 
 export default function WhyUsSection() {

@@ -8,7 +8,7 @@ import {
     TrackingAction,
     TrackingCategory
 } from "@/components/google-analytics";
-import {ArrowRight, Star} from "lucide-react";
+import {ArrowRight} from "lucide-react";
 import {CldImage} from "next-cloudinary";
 
 export default function HeroSection() {
