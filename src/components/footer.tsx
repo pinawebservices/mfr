@@ -18,7 +18,7 @@ export default function Footer() {
                             <span className="text-xl font-bold">MY FUNCTIONAL RECOVERY</span>
                         </Link>
                         <p className="text-gray-400 mb-6">
-                            Your trusted partner in health and wellness. Professional physical therapy and massage services.
+                            Your trusted partner in health and recovery. Professional massage therapy and body work services.
                         </p>
                     </div>
 
@@ -82,23 +82,23 @@ export default function Footer() {
                         <div className="space-y-3">
                             <div className="flex items-center gap-3">
                                 <MapPin className="h-5 w-5 Mfr-text-tiel" />
-                                <span className="text-gray-400">123 Wellness St, Health City, HC 12345</span>
+                                <span className="text-gray-400">1831 SW 118th Ave. Miramar, Fl, 33025</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Phone className="h-5 w-5 Mfr-text-tiel" />
-                                <span className="text-gray-400">(555) 123-4567</span>
+                                <span className="text-gray-400">(954)-600-7732</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Mail className="h-5 w-5 Mfr-text-tiel" />
-                                <span className="text-gray-400">info@wellnesshub.com</span>
+                                <span className="text-gray-400">myfunctionalrecovery24@gmail.com</span>
                             </div>
                         </div>
 
                         <div className="mt-6">
                             <h4 className="font-semibold mb-2">Hours</h4>
                             <div className="text-gray-400 text-sm space-y-1">
-                                <div>Mon-Fri: 8:00 AM - 7:00 PM</div>
-                                <div>Saturday: 9:00 AM - 5:00 PM</div>
+                                <div>Mon-Fri: 9:00 AM - 6:00 PM</div>
+                                <div>Saturday: 9:00 AM - 3:00 PM</div>
                                 <div>Sunday: Closed</div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                    <p>&copy; 2024 WellnessHub. All rights reserved.</p>
+                    <p>&copy; 2025 My Functional Recovery. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -69,8 +69,8 @@ export default function AboutPage() {
                 <div className="max-w-4xl mx-auto text-center">
                     <h1 className="text-5xl font-bold Mfr-text-tiel mb-6">About My Functional Recovery</h1>
                     <p className="text-xl text-dark-600 leading-relaxed">
-                        Dedicated to helping you achieve optimal health and wellness through professional physical therapy and
-                        massage services.
+                        Dedicated to helping you achieve optimal health and wellness through professional massage therapy and
+                        body work services.
                     </p>
                 </div>
             </section>
@@ -80,23 +80,17 @@ export default function AboutPage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold Mfr-text-tiel mb-6">Our Story</h2>
+                            <h2 className="text-4xl font-bold Mfr-text-tiel mb-6">My Story</h2>
                             <div className="space-y-4 text-dark-600 leading-relaxed">
                                 <p>
-                                    Founded in 2018, My Functional Recovery began with a simple mission: to provide exceptional physical
-                                    therapy and massage services in a warm, welcoming environment. Our founders, both healthcare
-                                    professionals, recognized the need for a practice that combines clinical expertise with genuine care
-                                    for each individual&#39;s journey to wellness.
+                                    My name is Natalia Villa. I am originally from Colombia and a mother of a beautiful teenage daughter. I started my weight loss journey after pregnancy and joined the gym in 2008. I immediately fell in love with the fitness industry and became a certified personal trainer in 2013.
+                                    I found a special interest in helping clients with limited mobility. This motivated me to go back to college and become a certified occupational therapy practitioner in 2017.
+                                    Although my initial interest was outpatient rehab, I found a new interest when I got my first job in a pediatric clinic where I worked for 7 years to help kids with autism or physical developmental delays to overcome these challenges and master basic daily functional life skills to live an independent life.
                                 </p>
                                 <p>
-                                    Over the years, we&#39;ve grown from a small clinic to a comprehensive wellness center, but our core
-                                    values remain unchanged. We believe that healing happens best when patients feel heard, understood,
-                                    and supported throughout their treatment process.
-                                </p>
-                                <p>
-                                    Today, we&#39;re proud to serve hundreds of clients each month, helping them overcome injuries, manage
-                                    pain, reduce stress, and achieve their health and wellness goals. Our team of licensed professionals
-                                    brings together decades of combined experience and a shared commitment to excellence.
+                                    My Functional Recovery integrates my knowledge in body mechanics, kinesiology, mobility and range of motion gathered as a personal trainer along with my aligned goals as an occupational practitioner to help people reach or return to the activities that are most meaningful to them.
+                                    As a recovery specialist I provide customized sessions including massage therapy, lymphatic drainage, neuro-cupping, different stretching modalities, scraping (Gua Sha), SRT (Soft Stretch Myofascial Release), and body contouring. This is a family-friendly practice, offering services to kids, teens, adult and seniors of all activity levels and physical conditions.
+                                    Each session is customized to the client’s needs. I am very grateful with my clients for their acceptance of my services and all the positive feedback I have received. It encourages me to continue to learn and better my business while providing the best service possible.
                                 </p>
                             </div>
                         </div>
@@ -108,12 +102,12 @@ export default function AboutPage() {
                                 alt="My Functional Recovery facility"
                                 className="rounded-2xl shadow-xl"
                             />
-                            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
-                                <div className="text-center">
-                                    <div className="text-3xl font-bold text-primary">500+</div>
-                                    <div className="text-sm text-dark-600">Happy Clients</div>
-                                </div>
-                            </div>
+                            {/*<div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">*/}
+                            {/*    <div className="text-center">*/}
+                            {/*        <div className="text-3xl font-bold text-primary">500+</div>*/}
+                            {/*        <div className="text-sm text-dark-600">Happy Clients</div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>
@@ -179,53 +173,53 @@ export default function AboutPage() {
             {/*</section>*/}
 
             {/* Certifications & Credentials */}
-            <section className="py-20 px-4 bg-gray-50">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold Mfr-text-tiel mb-4">Certifications & Credentials</h2>
-                        <p className="text-xl text-dark-600">Our commitment to professional excellence and continuing education</p>
-                    </div>
+            {/*<section className="py-20 px-4 bg-gray-50">*/}
+            {/*    <div className="max-w-7xl mx-auto">*/}
+            {/*        <div className="text-center mb-16">*/}
+            {/*            <h2 className="text-4xl font-bold Mfr-text-tiel mb-4">Certifications & Credentials</h2>*/}
+            {/*            <p className="text-xl text-dark-600">Our commitment to professional excellence and continuing education</p>*/}
+            {/*        </div>*/}
 
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <Card className="text-center border-0 shadow-lg">
-                            <CardContent className="p-8">
-                                <div className="Icon-bg-tiel w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <Award className="h-8 w-8 text-primary Icon-text-tiel" />
-                                </div>
-                                <h3 className="text-xl font-semibold mb-3 text-dark">Licensed Professionals</h3>
-                                <p className="text-dark-600">
-                                    All our therapists are fully licensed and maintain current certifications in their respective fields.
-                                </p>
-                            </CardContent>
-                        </Card>
+            {/*        <div className="grid md:grid-cols-3 gap-8">*/}
+            {/*            <Card className="text-center border-0 shadow-lg">*/}
+            {/*                <CardContent className="p-8">*/}
+            {/*                    <div className="Icon-bg-tiel w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">*/}
+            {/*                        <Award className="h-8 w-8 text-primary Icon-text-tiel" />*/}
+            {/*                    </div>*/}
+            {/*                    <h3 className="text-xl font-semibold mb-3 text-dark">Licensed Professionals</h3>*/}
+            {/*                    <p className="text-dark-600">*/}
+            {/*                        All our therapists are fully licensed and maintain current certifications in their respective fields.*/}
+            {/*                    </p>*/}
+            {/*                </CardContent>*/}
+            {/*            </Card>*/}
 
-                        <Card className="text-center border-0 shadow-lg">
-                            <CardContent className="p-8">
-                                <div className="Icon-bg-tiel w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <Shield className="h-8 w-8 Icon-text-tiel" />
-                                </div>
-                                <h3 className="text-xl font-semibold mb-3 text-dark">Insurance Accepted</h3>
-                                <p className="text-dark-600">
-                                    We work with most major insurance providers to make our services very accessible and affordable.
-                                </p>
-                            </CardContent>
-                        </Card>
+            {/*            <Card className="text-center border-0 shadow-lg">*/}
+            {/*                <CardContent className="p-8">*/}
+            {/*                    <div className="Icon-bg-tiel w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">*/}
+            {/*                        <Shield className="h-8 w-8 Icon-text-tiel" />*/}
+            {/*                    </div>*/}
+            {/*                    <h3 className="text-xl font-semibold mb-3 text-dark">Insurance Accepted</h3>*/}
+            {/*                    <p className="text-dark-600">*/}
+            {/*                        We work with most major insurance providers to make our services very accessible and affordable.*/}
+            {/*                    </p>*/}
+            {/*                </CardContent>*/}
+            {/*            </Card>*/}
 
-                        <Card className="text-center border-0 shadow-lg">
-                            <CardContent className="p-8">
-                                <div className="Icon-bg-tiel w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <Users className="h-8 w-8 Icon-text-tiel" />
-                                </div>
-                                <h3 className="text-xl font-semibold mb-3 text-dark">Continuing Education</h3>
-                                <p className="text-dark-600">
-                                    Our team regularly attends workshops and training to stay current with the latest techniques and best
-                                    practices.
-                                </p>
-                            </CardContent>
-                        </Card>
-                    </div>
-                </div>
-            </section>
+            {/*            <Card className="text-center border-0 shadow-lg">*/}
+            {/*                <CardContent className="p-8">*/}
+            {/*                    <div className="Icon-bg-tiel w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">*/}
+            {/*                        <Users className="h-8 w-8 Icon-text-tiel" />*/}
+            {/*                    </div>*/}
+            {/*                    <h3 className="text-xl font-semibold mb-3 text-dark">Continuing Education</h3>*/}
+            {/*                    <p className="text-dark-600">*/}
+            {/*                        Our team regularly attends workshops and training to stay current with the latest techniques and best*/}
+            {/*                        practices.*/}
+            {/*                    </p>*/}
+            {/*                </CardContent>*/}
+            {/*            </Card>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
         </div>
     )
 }

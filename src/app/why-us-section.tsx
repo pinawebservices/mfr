@@ -1,6 +1,6 @@
 'use client'
 
-import {Calendar, MapPin, Star} from "lucide-react";
+import {Calendar, Heart, Star} from "lucide-react";
 import Image from "next/image";
 
 export default function WhyUsSection() {
@@ -12,19 +12,19 @@ export default function WhyUsSection() {
                         <h2 className="text-4xl font-bold Mfr-text-tiel mb-6">Why Choose Us?</h2>
                         <div className="space-y-6">
                             <div className="flex gap-4">
-                                <div className="Icon-bg-tiel p-3 rounded-full flex-shrink-0">
+                                <div className="Icon-bg-tiel p-3 rounded-full flex-shrink-0 w-12 h-12 flex items-center justify-center self-start">
                                     <Star className="h-6 w-6 Icon-text-tiel" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-semibold mb-2">Licensed Professionals</h3>
+                                    <h3 className="text-xl font-semibold mb-2">Licensed & Insured Professional</h3>
                                     <p className="text-gray-600">
-                                        Our team consists of licensed physical therapists and certified massage therapists with years of
-                                        experience.
+                                        Licensed massage therapist with years of
+                                        experience in personal training, occupational therapy, and massage therapy.
                                     </p>
                                 </div>
                             </div>
                             <div className="flex gap-4">
-                                <div className="Icon-bg-tiel p-3 rounded-full flex-shrink-0">
+                                <div className="Icon-bg-tiel p-3 rounded-full flex-shrink-0 w-12 h-12 flex items-center justify-center self-start">
                                     <Calendar className="h-6 w-6 Icon-text-tiel" />
                                 </div>
                                 <div>
@@ -35,13 +35,13 @@ export default function WhyUsSection() {
                                 </div>
                             </div>
                             <div className="flex gap-4">
-                                <div className="Icon-bg-tiel p-3 rounded-full flex-shrink-0">
-                                    <MapPin className="h-6 w-6 Icon-text-tiel" />
+                                <div className="Icon-bg-tiel p-3 rounded-full flex-shrink-0 w-12 h-12 flex items-center justify-center self-start">
+                                    <Heart className="h-6 w-6 Icon-text-tiel" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-semibold mb-2">Modern Facility</h3>
+                                    <h3 className="text-xl font-semibold mb-2">Personalized Care</h3>
                                     <p className="text-gray-600">
-                                        State-of-the-art equipment and a clean, comfortable environment for your treatment.
+                                        Every treatment is customized to your specific needs, goals, and preferences.
                                     </p>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ export default function WhyUsSection() {
                     </div>
                     <div className="relative">
                         <Image
-                            src="/srt_professional.jpg"
+                            src="/deep_tissue.jpg"
                             width={500}
                             height={400}
                             alt="Professional therapist"
