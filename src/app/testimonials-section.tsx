@@ -5,19 +5,26 @@ import {Star} from "lucide-react";
 
 const testimonials = [
     {
-        name: "Sarah Johnson",
+        name: "Leidy Orozco",
         rating: 5,
-        text: "Amazing experience! The therapists are incredibly skilled and helped me recover from my injury faster than expected.",
+        text: "Hello Natalia,\n" +
+            "Just wanted to let you know that I felt great after the session yesterday, my shoulder feels amazing.\n" +
+            "The cupping felt so relieving and what's more interesting is that yesrday was the first time my blood pressure was back in the 120 range, it's been a bit that's been running high.\n" +
+            "The only different thing was the session yesterday, can't wait for next week, I'm feeling great. Thanks again and have a great rest of your week.",
     },
     {
         name: "Mike Chen",
         rating: 5,
-        text: "Professional, clean facility with top-notch service. I've been coming here for months and always leave feeling great.",
+        text: "I haven't worked out in a week and usually when I get back into the gym especially with the trainer it's really rough. However seeing you before my workout made a big difference. I felt strong fast loose and relaxed.\n" +
+            "You are amazing.",
     },
     {
-        name: "Emily Rodriguez",
+        name: "Tammy Barlow",
         rating: 5,
-        text: "The massage therapy here is exceptional. Perfect for stress relief after long work weeks.",
+        text: "Hello Natalia,\n" +
+            "Just wanted to let you know that I felt great after the session yesterday, my shoulder feels amazing.\n" +
+            "The cupping felt so relieving and what's more interesting is that yesrday was the first time my blood pressure was back in the 120 range, it's been a bit that's been running high.\n" +
+            "The only different thing was the session yesterday, can't wait for next week, I'm feeling great. Thanks again and have a great rest of your week.",
     },
 ]
 
