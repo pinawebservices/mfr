@@ -14,7 +14,7 @@ export default function CtaSection() {
     return (
         <section className="py-20 px-4 bg-[#f0978a]">
             <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-4xl font-bold text-white mb-6">Ready to Start Your Wellness Journey?</h2>
+                <h2 className="text-4xl font-bold text-white mb-6">Ready to Start Your Recovery Journey?</h2>
                 <p className="text-xl text-neutral-50 mb-8">
                     Book your appointment today and take the first step towards better health and wellness.
                 </p>

@@ -6,7 +6,7 @@ export default function ContactUsHeroSection() {
             <div className="max-w-4xl mx-auto text-center">
                 <h1 className="text-5xl font-bold Mfr-text-tiel mb-6">Contact Us</h1>
                 <p className="text-xl text-dark-600 leading-relaxed">
-                    Get in touch with our team. We&#39;re here to help you on your wellness journey.
+                    Get in touch. I&#39;m here to help you on your recovery journey.
                 </p>
             </div>
         </section>
