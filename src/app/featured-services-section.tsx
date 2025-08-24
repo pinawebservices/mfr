@@ -14,32 +14,32 @@ import {
 
 const services = [
     {
-        name: "Physical Therapy",
-        description: "Comprehensive rehabilitation and injury recovery programs",
-        duration: "45-60 min",
-        price: "From $120",
-        image: "/deep_tissue.jpg",
-    },
-    {
-        name: "Deep Tissue Massage",
-        description: "Therapeutic massage targeting muscle tension and knots",
-        duration: "60-90 min",
+        name: "Customized Body Work",
+        description: "Fully customized session designed to meet your unique needs and wellness goals.",
+        duration: "60-120 min",
         price: "From $90",
         image: "/scraping.jpg",
     },
     {
-        name: "Sports Massage",
-        description: "Specialized treatment for athletes and active individuals",
-        duration: "60 min",
-        price: "From $100",
-        image: "/physical_therapy.jpg",
+        name: "Body Contouring",
+        description: "Advanced body contouring combos",
+        duration: "30-60 min",
+        price: "From $65",
+        image: "/body_contouring.jpg",
     },
     {
-        name: "Relaxation Massage",
-        description: "Gentle, soothing massage for stress relief and relaxation",
-        duration: "60-90 min",
-        price: "From $80",
-        image: "/relaxation_massage.jpg",
+        name: "Lymphatic Drainage Massage",
+        description: "Detox, reduce swelling, boost immunity.",
+        duration: "60 min",
+        price: "From $120",
+        image: "/lymphatic_drainage.jpg",
+    },
+    {
+        name: "Teens and Kids Recovery",
+        description: "Massage for Kids & Young Athletes",
+        duration: "30 min",
+        price: "From $45",
+        image: "/kids_massage.jpg",
     },
 ]
 
