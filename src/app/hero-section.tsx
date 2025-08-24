@@ -8,6 +8,7 @@ import {
     TrackingAction,
     TrackingCategory
 } from "@/components/google-analytics";
+
 import {ArrowRight} from "lucide-react";
 import {CldImage} from "next-cloudinary";
 
