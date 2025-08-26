@@ -5,7 +5,7 @@ import {Card, CardContent} from "@/components/ui/card";
 // import {Input} from "@/components/ui/input";
 // import {Textarea} from "@/components/ui/textarea";
 import {Button} from "@/components/ui/button";
-import {Clock, Mail, Phone} from "lucide-react";
+import {Clock, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import {
     ButtonClickSource,
@@ -18,7 +18,7 @@ export default function ContactContentSection() {
     return (
         <section className="py-20 px-4 bg-gray-50">
             <div className="max-w-7xl mx-auto">
-                <div className="grid lg:grid-cols-2 gap-16">
+                <div className="max-w-2xl mx-auto">
                     {/* Contact Form */}
                     {/*<Card className="shadow-xl border-0">*/}
                     {/*    <CardHeader>*/}
@@ -79,9 +79,9 @@ export default function ContactContentSection() {
                                             <Phone className="h-6 w-6 text-[#f0978a]" />
                                         </div>
                                         <div>
-                                            <h3 className="font-semibold text-lg mb-1 text-dark">Phone</h3>
-                                            <p className="text-dark-600 mb-2">(555) 123-4567</p>
-                                            <p className="text-sm text-dark-500">Call us for immediate assistance</p>
+                                            <h3 className="font-semibold text-lg mb-1 text-dark">WhatsApp</h3>
+                                            <p className="text-dark-600 mb-2">+ 1 (954) 600-7732</p>
+                                            <p className="text-sm text-dark-500">Message for faster assistance</p>
                                         </div>
                                     </div>
                                 </CardContent>

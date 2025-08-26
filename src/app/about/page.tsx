@@ -1,7 +1,8 @@
+'use client'
 import { Award, Heart, Shield, Users } from "lucide-react"
 
 import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image";
+import {CldImage} from "next-cloudinary";
 
 export default function AboutPage() {
     // const team = [
@@ -95,8 +96,8 @@ export default function AboutPage() {
                             </div>
                         </div>
                         <div className="relative">
-                            <Image
-                                src="/srt_professional.jpg"
+                            <CldImage
+                                src="https://res.cloudinary.com/ddudpjxrp/image/upload/v1756166006/srt_professional_t0utkc.jpg"
                                 width={600}
                                 height={500}
                                 alt="My Functional Recovery facility"

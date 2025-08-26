@@ -1,6 +1,6 @@
 'use client'
 
-import Image from "next/image";
+import {CldImage} from "next-cloudinary";
 import {Check, Clock, Star} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
@@ -19,7 +19,7 @@ const services = [
             "Comprehensive rehabilitation and injury recovery programs designed to restore function and reduce pain.",
         duration: "45-60 minutes",
         price: "From $120",
-        image: "/physical_therapy.jpg",
+        image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1756168097/physical_therapy_qzjn5q.jpg",
         features: [
             "Injury assessment and diagnosis",
             "Personalized treatment plans",
@@ -43,7 +43,7 @@ const services = [
             "Therapeutic massage targeting deeper layers of muscle and connective tissue to release chronic tension.",
         duration: "60-90 minutes",
         price: "From $90",
-        image: "/scraping.jpg",
+        image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1756166172/scraping_bpa9xt.jpg",
         features: [
             "Targets chronic muscle tension",
             "Improves blood circulation",
@@ -67,7 +67,7 @@ const services = [
             "Specialized massage therapy designed for athletes and active individuals to enhance performance and prevent injuries.",
         duration: "60 minutes",
         price: "From $100",
-        image: "/deep_tissue.jpg",
+        image: "",
         features: [
             "Pre-event preparation",
             "Post-event recovery",
@@ -91,7 +91,7 @@ const services = [
             "Gentle, soothing massage focused on stress relief and overall relaxation for mind and body wellness.",
         duration: "60-90 minutes",
         price: "From $80",
-        image: "/relaxation_massage.jpg",
+        image: "",
         features: [
             "Gentle, flowing strokes",
             "Stress reduction",
@@ -121,8 +121,8 @@ export default function ServicesContentSection() {
                             className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
                         >
                             <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
-                                <Image
-                                    src={service.image || "/placeholder.svg"}
+                                <CldImage
+                                    src={service.image || "https://res.cloudinary.com/ddudpjxrp/image/upload/v1755960920/white-logo_ikrrws.png"}
                                     width={400}
                                     height={300}
                                     alt={service.name}
@@ -180,7 +180,7 @@ export default function ServicesContentSection() {
                                 </div>
 
                                 <Button size="lg" className="Mfr-btn-bg-pink text-white" asChild>
-                                    <Link href="/book" onClick={() => gAnalyticsTrackActionClick(ButtonClickSource.ServicesGallery, TrackingAction.GoToBooking, TrackingCategory.Booking)}>Book This Service</Link>
+                                    <Link href="/book" onClick={() => gAnalyticsTrackActionClick(ButtonClickSource.ServicesGallery, TrackingAction.GoToBooking, TrackingCategory.Booking)}>Book Service</Link>
                                 </Button>
                             </div>
                         </div>
