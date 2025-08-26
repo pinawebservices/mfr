@@ -1,7 +1,7 @@
 'use client'
 
 import {Card, CardContent} from "@/components/ui/card";
-import Image from "next/image";
+import {CldImage} from "next-cloudinary";
 import {Clock} from "lucide-react";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
@@ -18,28 +18,28 @@ const services = [
         description: "Fully customized session designed to meet your unique needs and wellness goals.",
         duration: "60-120 min",
         price: "From $90",
-        image: "/scraping.jpg",
+        image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1756166172/scraping_bpa9xt.jpg",
     },
     {
         name: "Body Contouring",
         description: "Advanced body contouring combos",
         duration: "30-60 min",
         price: "From $65",
-        image: "/body_contouring.jpg",
+        image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1756165977/body_contouring_kjmbop.jpg",
     },
     {
         name: "Lymphatic Drainage Massage",
         description: "Detox, reduce swelling, boost immunity.",
         duration: "60 min",
         price: "From $120",
-        image: "/lymphatic_drainage.jpg",
+        image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1756165977/lymphatic_drainage_w55b5w.jpg",
     },
     {
         name: "Teens and Kids Recovery",
         description: "Massage for Kids & Young Athletes",
         duration: "30 min",
         price: "From $45",
-        image: "/kids_massage.jpg",
+        image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1756165976/kids_massage_okf5a4.jpg",
     },
 ]
 
@@ -58,11 +58,13 @@ export default function FeaturedServicesSection() {
                     {services.map((service, index) => (
                         <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
                             <div className="relative overflow-hidden rounded-t-lg">
-                                <Image
-                                    src={service.image || "/placeholder.svg"}
+                                <CldImage
+                                    src={service.image || "https://res.cloudinary.com/ddudpjxrp/image/upload/t_600w/v1755960920/white-logo_ikrrws.png"}
                                     width={300}
                                     height={400}
                                     alt={service.name}
+                                    crop="mfit"
+                                    gravity="south"
                                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                                 <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold Mfr-text-tiel">

@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import ChatbotProvider from "@/components/ai-chatbot";
+// import ChatbotProvider from "@/components/ai-chatbot";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 import GoogleAnalytics from "@/components/google-analytics"
@@ -28,7 +28,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <Navbar />
         <main>{children}</main>
-        <ChatbotProvider />
+        {/*<ChatbotProvider />*/}
         <Footer />
         <SpeedInsights />
         <Analytics />

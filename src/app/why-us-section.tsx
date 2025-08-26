@@ -1,7 +1,7 @@
 'use client'
 
 import {Calendar, Heart, Star} from "lucide-react";
-import Image from "next/image";
+import {CldImage} from "next-cloudinary";
 
 export default function WhyUsSection() {
     return (
@@ -48,8 +48,8 @@ export default function WhyUsSection() {
                         </div>
                     </div>
                     <div className="relative">
-                        <Image
-                            src="/deep_tissue.jpg"
+                        <CldImage
+                            src="https://res.cloudinary.com/ddudpjxrp/image/upload/v1755959640/deep_tissue_onoccz.jpg"
                             width={500}
                             height={400}
                             alt="Professional therapist"
