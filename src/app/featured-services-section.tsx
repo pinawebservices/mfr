@@ -22,9 +22,9 @@ const services = [
     },
     {
         name: "Body Contouring",
-        description: "Advanced body contouring combos",
+        description: "Advanced body contouring treatments",
         duration: "30-60 min",
-        price: "From $65",
+        price: "From $50",
         image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1756165977/body_contouring_kjmbop.jpg",
     },
     {
