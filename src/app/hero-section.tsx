@@ -33,9 +33,9 @@ export default function HeroSection() {
                                     Book Appointment <ArrowRight className="ml-2 h-5 w-5" />
                                 </Link>
                             </Button>
-                            <Button size="lg" variant="outline" asChild>
-                                <Link href="/services" onClick={() => gAnalyticsTrackActionClick(ButtonClickSource.Hero, TrackingAction.GoToServices, TrackingCategory.Services)}>View Services</Link>
-                            </Button>
+                            {/*<Button size="lg" variant="outline" asChild>*/}
+                            {/*    <Link href="/services" onClick={() => gAnalyticsTrackActionClick(ButtonClickSource.Hero, TrackingAction.GoToServices, TrackingCategory.Services)}>View Services</Link>*/}
+                            {/*</Button>*/}
                         </div>
                     </div>
                     <div className="relative">

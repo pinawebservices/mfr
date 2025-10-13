@@ -26,11 +26,11 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
-                            <li>
-                                <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
-                                    Services
-                                </Link>
-                            </li>
+                            {/*<li>*/}
+                            {/*    <Link href="/services" className="text-gray-400 hover:text-white transition-colors">*/}
+                            {/*        Services*/}
+                            {/*    </Link>*/}
+                            {/*</li>*/}
                             <li>
                                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
                                     About Us
@@ -49,32 +49,32 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* services */}
-                    <div>
-                        <h3 className="text-lg font-semibold mb-4">Services</h3>
-                        <ul className="space-y-2">
-                            <li>
-                                <Link href="/services#physical-therapy" className="text-gray-400 hover:text-white transition-colors">
-                                    Physical Therapy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services#massage" className="text-gray-400 hover:text-white transition-colors">
-                                    Massage Therapy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services#sports" className="text-gray-400 hover:text-white transition-colors">
-                                    Sports Massage
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services#relaxation" className="text-gray-400 hover:text-white transition-colors">
-                                    Relaxation Massage
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
+                    {/*/!* services *!/*/}
+                    {/*<div>*/}
+                    {/*    <h3 className="text-lg font-semibold mb-4">Services</h3>*/}
+                    {/*    <ul className="space-y-2">*/}
+                    {/*        <li>*/}
+                    {/*            <Link href="/services#physical-therapy" className="text-gray-400 hover:text-white transition-colors">*/}
+                    {/*                Physical Therapy*/}
+                    {/*            </Link>*/}
+                    {/*        </li>*/}
+                    {/*        <li>*/}
+                    {/*            <Link href="/services#massage" className="text-gray-400 hover:text-white transition-colors">*/}
+                    {/*                Massage Therapy*/}
+                    {/*            </Link>*/}
+                    {/*        </li>*/}
+                    {/*        <li>*/}
+                    {/*            <Link href="/services#sports" className="text-gray-400 hover:text-white transition-colors">*/}
+                    {/*                Sports Massage*/}
+                    {/*            </Link>*/}
+                    {/*        </li>*/}
+                    {/*        <li>*/}
+                    {/*            <Link href="/services#relaxation" className="text-gray-400 hover:text-white transition-colors">*/}
+                    {/*                Relaxation Massage*/}
+                    {/*            </Link>*/}
+                    {/*        </li>*/}
+                    {/*    </ul>*/}
+                    {/*</div>*/}
 
                     {/* Contact Info */}
                     <div>
@@ -93,14 +93,13 @@ export default function Footer() {
                                 <span className="text-gray-400">myfunctionalrecovery24@gmail.com</span>
                             </div>
                         </div>
-
-                        <div className="mt-6">
-                            <h4 className="font-semibold mb-2">Hours</h4>
-                            <div className="text-gray-400 text-sm space-y-1">
-                                <div>Mon-Fri: 9:00 AM - 6:00 PM</div>
-                                <div>Saturday: 9:00 AM - 3:00 PM</div>
-                                <div>Sunday: Closed</div>
-                            </div>
+                    </div>
+                    <div>
+                        <h4 className="font-semibold mb-2">Hours</h4>
+                        <div className="text-gray-400 text-sm space-y-1">
+                            <div>Mon-Fri: 9:00 AM - 6:00 PM</div>
+                            <div>Saturday: 9:00 AM - 3:00 PM</div>
+                            <div>Sunday: Closed</div>
                         </div>
                     </div>
                 </div>
