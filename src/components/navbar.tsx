@@ -26,7 +26,7 @@ export default function Navbar() {
 
     const navigation = [
         { name: "Home", href: "/" , reloadDocument: false},
-        { name: "Services", href: "/services", reloadDocument: true },
+        //{ name: "Services", href: "/services", reloadDocument: true },
         { name: "About", href: "/about" , reloadDocument: false},
         { name: "Contact", href: "/contact" , reloadDocument: false},
     ]

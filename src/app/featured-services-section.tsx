@@ -25,7 +25,7 @@ const services = [
         description: "Advanced body contouring treatments",
         duration: "30-60 min",
         price: "From $50",
-        image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1756165977/body_contouring_kjmbop.jpg",
+        image: "https://res.cloudinary.com/ddudpjxrp/image/upload/v1760391418/body-contouring_jjvghw.jpg",
     },
     {
         name: "Lymphatic Drainage Massage",
